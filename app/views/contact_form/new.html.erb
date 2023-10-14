@@ -21,8 +21,8 @@
                 <!-- Your new form goes here -->
                 <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
   <div class="form-group">
-    <%= form.label :name, class: "form-label" %>
-    <%= form.text_field :name, class: "form-control" %>
+    <%= form.label :nom, class: "form-label" %>
+    <%= form.text_field :nom, class: "form-control" %>
   </div>
 
   <div class="form-group">
@@ -31,8 +31,8 @@
   </div>
 
   <div class="form-group">
-    <%= form.label :subject, class: "form-label" %>
-    <%= form.text_field :subject, class: "form-control" %>
+    <%= form.label :objet, class: "form-label" %>
+    <%= form.text_field :objet, class: "form-control" %>
   </div>
 
   <div class="form-group">
@@ -41,7 +41,7 @@
   </div>
 
   <div class="form-group">
-    <%= form.submit 'Send Message', class: "btn btn-primary py-3 px-5" %>
+    <%= form.submit 'Envoyer', class: "btn btn-primary py-3 px-5" %>
   </div>
 <% end %>
 
