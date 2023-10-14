@@ -1,0 +1,20 @@
+.icons{
+  color: $primary;
+  display: flex; /* Use a flex container */
+  align-items: center; /* Vertically center the content */
+}
+i  {
+  font-size: 1.5rem;
+}
+
+
+.icons i, .icons p {
+  display: inline-block; /* Display as inline-block elements */
+  vertical-align: middle; /* Vertically align the content */
+  margin-right: 10px; /* Add some spacing between the icon and text */
+  font-weight: 700;
+
+}
+.icons p{
+  margin-top: 1%;
+}
