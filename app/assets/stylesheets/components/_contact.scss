@@ -18,3 +18,17 @@ i  {
 .icons p{
   margin-top: 1%;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+ .icons{
+  display: block;
+  text-align: center;
+   }
+   .icons i {
+    display: block; /* Display each 'i' element as a block for stacking */
+  }
+
+  .icons p {
+    display: inline; /* Display each 'p' element as inline for horizontal arrangement */
+  }
+}
