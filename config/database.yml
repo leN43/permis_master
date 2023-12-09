@@ -6,9 +6,9 @@ default: &default
 development:
   <<: *default
   database: permis_master_development
-  username: niels
-  password: lolman43
-  host: localhost
+  username: permis_master_development_user
+  password: jBz8ipeCLgFea3uXSZDbsWyPNQPaxGWi
+  host: dpg-clq3ffie9h4c73ahpqig-a
   port: 5432
 
 test:
