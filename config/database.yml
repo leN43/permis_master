@@ -16,5 +16,11 @@ test:
   database: permis_master_test
 
 production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] || "postgres://permis_master:#{ENV['PERMIS_MASTER_DATABASE_PASSWORD']}@your-production-host:5432/permis_master_production" %>
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: dpg-clq3ffie9h4c73ahpqig-a.oregon-postgres.render.com
+  port: 5432
+  database: permis_master_development
+  username: permis_master_development_user
+  password: jBz8ipeCLgFea3uXSZDbsWyPNQPaxGWi
