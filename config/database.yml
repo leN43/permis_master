@@ -17,6 +17,4 @@ test:
 
 production:
   <<: *default
-  database: permis_master_production
-  username: permis_master
-  password: <%= ENV["PERMIS_MASTER_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] || "postgres://permis_master:#{ENV['PERMIS_MASTER_DATABASE_PASSWORD']}@your-production-host:5432/permis_master_production" %>
