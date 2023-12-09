@@ -10,7 +10,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=IBM+Plex+Mono&family=Nunito:wght@300&display=swap');
 h1 {
   text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
 
+}
+.bg-color {
+  background-color: #0F0F0F; /* Your desired background color */
 }
