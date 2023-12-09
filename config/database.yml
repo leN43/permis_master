@@ -16,11 +16,9 @@ test:
   database: permis_master_test
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  <<: *default
   host: dpg-clq3ffie9h4c73ahpqig-a.oregon-postgres.render.com
   port: 5432
-  database: permis_master_development
-  username: permis_master_development_user
-  password: jBz8ipeCLgFea3uXSZDbsWyPNQPaxGWi
+  database: permis_master_production
+  username: permis_master_development_user # Use your actual production username
+  password: jBz8ipeCLgFea3uXSZDbsWyPNQPaxGWi # Use your actual production password
